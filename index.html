@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Wordshot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./PicsArt_06-26-10.25.28.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h2>
+          <a href="./index.html" style="text-decoration: none; color: black"
+            >Wordshot</a
+          >
+        </h2>
+      </div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./aboutPage.html">About</a></li>
+        <li><a href="./FAQ's Page.html">FAQ's</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <img src="./website_bg.jpg" alt="Background_image" id="backgroundImage" />
+    <section class="hobbySection">
+      <h2 id="hobbyText">Hobbies</h2>
+      <section class="hobbies" data-aos="fade-up" data-aos-duration="1000">
+        <div class="eachHobby">
+          <img src="./coder png.png" alt="#" height="150px" width="150px" />
+          <h3>Coding</h3>
+        </div>
+        <div class="eachHobby">
+          <img src="./singer png.png" alt="#" height="150px" width="150px" />
+          <h3>Singing</h3>
+        </div>
+        <div class="eachHobby">
+          <img src="./rapper png.png" alt="#" height="150px" width="150px" />
+          <h3>Rapping</h3>
+        </div>
+      </section>
+    </section>
+    <hr>
+    <section class="hobbySection">
+      <h2 id="hobbyText">My Recent Works</h2>
+      <section class="videos" data-aos="fade-up" data-aos-duration="1000">
+        <iframe
+          width="460"
+          height="315"
+          src="https://www.youtube.com/embed/Lk5LrAEU1iI"
+          title="YouTube video player"
+          frameborder="0"
+          style="border-radius: 20px"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          width="460"
+          height="315"
+          src="https://www.youtube.com/embed/hd5YhKEww_c"
+          title="YouTube video player"
+          frameborder="0"
+          style="border-radius: 20px"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </section>
+    <hr>
+    <section class="hobbySection">
+      <h2 id="hobbyText">Let's Connect!</h2>
+      <section class="videos" data-aos="fade-up" data-aos-duration="1000">
+        <div class="eachHobby">
+          <img src="./insta-logo-icon.png" alt="insta-logo" id="instaLogo" onclick="instaRedirect()">
+          <h4>Instagram</h4>
+        </div>
+        <div class="eachHobby">
+          <img src="./twitter-logo-icon.png" alt="twitter-logo" id="twitterLogo" onclick="twitterRedirect()">
+          <h4>Twitter</h4>
+        </div>
+        <div class="eachHobby">
+          <img src="./yt-logo-icon.png" alt="youtube-logo" id="youtubeLogo" height="48px" width="48px" onclick="youtubeRedirect()">
+          <h4>Youtube</h4>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <!-- navbar event listener and stuff -->
+  <script>
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector("nav ul");
+    const navLinks = document.querySelectorAll("nav ul li");
+    burger.addEventListener("click", () => {
+      nav.classList.toggle("nav-active");
+      burger.classList.toggle("toggle");
+    });
+    navLinks.forEach((link) => {
+      link.style.animation = `navLinkFade 0.5s ease forwards`;
+    });
+    //redirecting of webpages on clicking the respective icons!
+    function instaRedirect(){
+      window.open('https://www.instagram.com/wordshott/');
+    }
+    function twitterRedirect(){
+      window.open('https://twitter.com/wordshott');
+    }
+    function youtubeRedirect(){
+      window.open('https://www.youtube.com/channel/UCe1vXJ4dHBxlKD-nwUH4VxA');
+    }
+  </script>
+
+  <!-- animation for youtube iframes and other using aos library -->
+  <script>
+    AOS.init();
+  </script>
+</html>
