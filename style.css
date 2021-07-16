@@ -60,7 +60,7 @@ nav > ul > li > a {
   }
 }
 @media screen and (max-width: 500px) {
-  body {
+  body,html{
     overflow-x: hidden;
   }
   nav > ul {
