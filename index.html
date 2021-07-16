@@ -19,15 +19,15 @@
     <nav>
       <div class="logo">
         <h2>
-          <a href="./index.html" style="text-decoration: none; color: black"
+          <a href="./index.html" id="logo_text" style="text-decoration: none; color: black"
             >Wordshot</a
           >
         </h2>
       </div>
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./aboutPage.html">About</a></li>
-        <li><a href="./FAQ's Page.html">FAQ's</a></li>
+        <li><a class="anchorTag1" href="./index.html">Home</a></li>
+        <li><a class="anchorTag2" href="./aboutPage.html">About</a></li>
+        <li><a class="anchorTag3" href="./FAQ's Page.html">FAQ's</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -53,10 +53,10 @@
         </div>
       </section>
     </section>
-    <hr>
+    <hr />
     <section class="hobbySection">
       <h2 id="hobbyText">My Recent Works</h2>
-      <section class="videos" data-aos="fade-up" data-aos-duration="1000">
+      <section class="videos" data-aos="fade-right" data-aos-duration="1000">
         <iframe
           width="460"
           height="315"
@@ -79,20 +79,37 @@
         ></iframe>
       </section>
     </section>
-    <hr>
+    <hr />
     <section class="hobbySection">
       <h2 id="hobbyText">Let's Connect!</h2>
-      <section class="videos" data-aos="fade-up" data-aos-duration="1000">
+      <section class="videos" data-aos="fade-left" data-aos-duration="1000">
         <div class="eachHobby">
-          <img src="./insta-logo-icon.png" alt="insta-logo" id="instaLogo" onclick="instaRedirect()">
+          <img
+            src="./insta-logo-icon.png"
+            alt="insta-logo"
+            id="instaLogo"
+            onclick="instaRedirect()"
+          />
           <h4>Instagram</h4>
         </div>
         <div class="eachHobby">
-          <img src="./twitter-logo-icon.png" alt="twitter-logo" id="twitterLogo" onclick="twitterRedirect()">
+          <img
+            src="./twitter-logo-icon.png"
+            alt="twitter-logo"
+            id="twitterLogo"
+            onclick="twitterRedirect()"
+          />
           <h4>Twitter</h4>
         </div>
         <div class="eachHobby">
-          <img src="./yt-logo-icon.png" alt="youtube-logo" id="youtubeLogo" height="48px" width="48px" onclick="youtubeRedirect()">
+          <img
+            src="./yt-logo-icon.png"
+            alt="youtube-logo"
+            id="youtubeLogo"
+            height="48px"
+            width="48px"
+            onclick="youtubeRedirect()"
+          />
           <h4>Youtube</h4>
         </div>
       </section>
@@ -112,17 +129,19 @@
       link.style.animation = `navLinkFade 0.5s ease forwards`;
     });
     //redirecting of webpages on clicking the respective icons!
-    function instaRedirect(){
-      window.open('https://www.instagram.com/wordshott/');
+    function instaRedirect() {
+      window.open("https://www.instagram.com/wordshott/");
     }
-    function twitterRedirect(){
-      window.open('https://twitter.com/wordshott');
+    function twitterRedirect() {
+      window.open("https://twitter.com/wordshott");
     }
-    function youtubeRedirect(){
-      window.open('https://www.youtube.com/channel/UCe1vXJ4dHBxlKD-nwUH4VxA');
+    function youtubeRedirect() {
+      window.open("https://www.youtube.com/channel/UCe1vXJ4dHBxlKD-nwUH4VxA");
     }
   </script>
-
+  <script>
+    
+  </script>
   <!-- animation for youtube iframes and other using aos library -->
   <script>
     AOS.init();

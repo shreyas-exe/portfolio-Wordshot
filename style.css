@@ -4,9 +4,11 @@
   padding: 0;
   box-sizing: border-box;
   position: relative;
-  background: whitesmoke;
 }
-html::-webkit-scrollbar{
+body{
+  background-color: whitesmoke;
+}
+html::-webkit-scrollbar {
   display: none;
 }
 #backgroundImage {
@@ -67,7 +69,7 @@ nav > ul > li > a {
     height: 100vh;
     top: 8vh;
     width: 100%;
-    background: white;
+    background: whitesmoke;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -159,7 +161,8 @@ nav > ul > li > a {
   transform: translateY(-10px);
   transition: all 0.5s;
 }
-h4{
+h4 {
   font-size: 1.25rem;
   text-align: center;
 }
+
