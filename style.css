@@ -47,6 +47,9 @@ nav > ul > li > a {
   transition: all 0.3s ease-in;
 }
 @media screen and (max-width: 768px) {
+  body,html{
+    overflow-x: hidden;
+  }
   nav > ul {
     width: 50%;
   }
